@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Kata Kata Hari Ini</title>
+  <style>
+  body {
+    font-family: Arial;
+    background: #fce4ec;
+    text-align: center;
+    padding: 40px;
+  }
+  .quote {
+    background: pink;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px
+    rgba(0,0,0,0.1);
+  }
+  </style>
+  <button onclick="gantiQuote()" style="padding:15px; border:none; border-radius:20px; background:#ff80ab; color:white; font-size:16px;">
+  Ganti Kata 💗
+</button>
+
+<script>
+const quotes = [
+  "Kamu nggak lemah, kamu cuma lagi lelah.",
+  "Pelan-pelan nggak apa, yang penting jangan berhenti.",
+  "Semua luka akan jadi cerita yang indah nanti.",
+  "Kamu berharga, walau dunia belum menyadarinya.",
+  "Hari buruk bukan hidup yang buruk."
+];
+
+function gantiQuote(){
+  const random = Math.floor(Math.random() * quotes.length);
+  document.querySelector(".quote").innerText = quotes[random];
+}
+</script>
+  
+</head>
+<body>
+  
+
+  <h1>💗 Ruang Tenang</h1>
+  <p>Tempat buat kamu yang lagi capek.</p>
+
+  <div class="quote">"Kamu nggak lemah, kamu cuma lagi lelah."</div>
+  <div class="quote">"Pelan-pelan nggak apa, yang penting jangan berhenti."</div>
+  <div class="quote">"Semua luka akan jadi cerita yang indah nanti."</div>
+
+</body>
+</html>
+
+ 
+
